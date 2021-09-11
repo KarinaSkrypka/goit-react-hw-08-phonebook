@@ -1,0 +1,43 @@
+.AuthNavList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.AuthNavListItem:not(:last-child) {
+  margin-right: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 20px;
+  }
+}
+
+// .AuthNavListItem {
+//   margin-left: 10px;
+
+//    @media screen and (min-width: 768px) {
+//      margin-left: 20px;
+//   }
+// }
+
+.link {
+  display: inline-block;
+  margin: 0;
+  padding: 15px 0 15px;
+  text-decoration: none;
+  color: #2a363b;
+  font-size: 16px;
+  font-weight: 500;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.activeLink {
+  composes: link;
+  color: #30d5c8;
+  font-weight: 600;
+}
